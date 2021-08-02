@@ -97,10 +97,10 @@ public class PandBconvert {
 			if (pal_inp.trim().equalsIgnoreCase("exit"))
 				break;
 
-			trimStr(pal_inp);
-			if (isPalindrome(pal_inp)) {
+			String x = trimStr(pal_inp);
+			if (isPalindrome(x)) {
 				strLength.add(str_Length);
-				coll.add(pal_inp);
+				coll.add(x);
 			}
 
 		}
