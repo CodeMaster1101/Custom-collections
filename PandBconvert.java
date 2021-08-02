@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 /*
  * 	Write program that will take number from console with base 12 (twelve digits 0,1,2,3,4,5,6,7,8,9,A, B), converts it to number with base 10 (0, .., 9) and prints it to console
-	Write program that will take test from console and return the length of the biggest palindrom (palindrom is word that reads the same from left to tight, and from right to left ñ for example ìanaî, ìboobî, Ö ). Consider the empty spaces as character also ñ palindrom is also ìaba abaî.
+	Write program that will take test from console and return the length of the biggest palindrom (palindrom is word that reads the same from left to tight, and from right to left ‚Äì for example ‚Äúana‚Äù, ‚Äúboob‚Äù, ‚Ä¶ ). Consider the empty spaces as character also ‚Äì palindrom is also ‚Äúaba aba‚Äù.
 	As for extra challenge return the longest palindrome word.
  */
 
@@ -37,7 +37,7 @@ public class PandBconvert {
 		System.out.println("Insert base 12 numbers to convert them into base 10. (from 0 to B");
 		while (true) {
 			System.out.println("insert: ");
-			String base_inp = scan.nextLine();
+			String base_inp = scan.nextLine().trim();
 			if (base_inp.equalsIgnoreCase("exit"))
 				break;
 
