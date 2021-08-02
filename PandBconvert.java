@@ -93,7 +93,7 @@ public class PandBconvert {
 		while (true) {
 			System.out.println("insert: ");
 			String pal_inp = scan.nextLine();
-			Integer str_Length = (checkForBlank(pal_inp));
+			Integer str_Length = pal_inp.length();
 			if (pal_inp.trim().equalsIgnoreCase("exit"))
 				break;
 
@@ -160,15 +160,6 @@ public class PandBconvert {
 			}
 		}
 		return longestString;
-	}
-
-	private int checkForBlank(String str) {
-		Integer k = str.length();
-		for (int j = 0; j < k; j++) {
-			if (str.substring(j, j + 1).isBlank())
-				k += 1;
-		}
-		return k;
 	}
 
 	private String trimStr(String str) {
