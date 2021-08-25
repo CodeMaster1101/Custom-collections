@@ -46,17 +46,28 @@ public class MileLinkedList {
 	public boolean remove() {
 		if(start == null && end == null)
 			return false;
-
-		start.next.previous = null;
-		start = start.next;
+		
+		if(size == 1) {
+			end = null;
+			start = null;
+		}else {
+			start.next.previous = null;
+			start = start.next;
+		}
+		size--;
 		return true;
 	}
 	public boolean removeRear() {
 		if(start == null && end == null)
 			return false;
-
+		
+		if(size == 1) {
+		   end = null;
+		   start = null;
+		}else{
 		end.previous.next = null;
 		end = end.previous;
+		}size--;
 		return true;
 	}
 
